@@ -6,7 +6,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 const Main = () => {
     const [places, setPlaces] = useState([])
     const [cart, setCart] = useState([])
-
+    const [randomPlace, setRandomPlace] = useState([])
 
 
     useEffect(() => {
@@ -18,6 +18,11 @@ const Main = () => {
     const handleAddToCart = (place) => {
         const newCart = [...cart, place]
         setCart(newCart)
+    }
+    const randomBtn = () => {
+        const randomPlace = cart[Math.floor(Math.random() * cart.length)]
+
+        setRandomPlace(randomPlace)
     }
     return (
         <div className='fullpart'>
@@ -44,8 +49,9 @@ const Main = () => {
                         )}
 
                     </div>
-                    <button className='first-choose'>choose randomly</button>
-                    <button className='choose-again'>choose again</button>
+                    <div><h4>randomly chosen city is -- {randomPlace.name}</h4></div>
+                    <button onClick={randomBtn} className='first-choose'>choose 1 randomly</button>
+                    <button className='reset'>reset item </button>
 
                 </div>
             </div>
