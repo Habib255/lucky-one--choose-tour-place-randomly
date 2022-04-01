@@ -43,7 +43,23 @@ const Main = () => {
                         and where each components has its own property and function. </p>
                     <p><strong>Question: </strong> Difference between props and state
                     </p>
-                    <p><strong>Answer: </strong></p>
+                    <p><strong>Answer:
+                    </strong> Here are some difference between props and state- <br />
+                        <strong>props:</strong>
+                        <li>props are used to pass data and even handlers to its children.</li>
+                        <li>props are immuatable, its cann't be changed.</li>
+                        <li>props can be used in both functional and class components</li>
+                        <li>props are set by the parents components for the children components</li>
+                        <strong>state:</strong>
+                        <li> state are used to store data of the components that has to be rendered to the view.</li>
+                        <li>state holds data and it changable.</li>
+                        <li>state can be used only in class components</li>
+                        <li>state is genereally updated by evenhandler</li>
+
+
+
+
+                    </p>
                 </div>
             </div>
             <div className="aside-part">
