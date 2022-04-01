@@ -20,26 +20,28 @@ const Main = () => {
         setCart(newCart)
     }
     const resetBtn = () => {
-
         setCart([])
         setRandomPlace([])
     }
     const randomBtn = () => {
         const randomPlace = cart[Math.floor(Math.random() * cart.length)]
-
         setRandomPlace(randomPlace)
-
-
     }
     return (
         <div className='fullpart'>
             <div className='components'>
                 {
-
                     places.map(place => <Places key={place.id}
                         place={place}
                         handleAddToCart={handleAddToCart}></Places>)
                 }
+                <div className='question-answer'>
+                    <p>Question: How does react work</p>
+                    <p>Answer: </p>
+                    <p>Question: Difference between props and state
+                    </p>
+                    <p>Answer: </p>
+                </div>
             </div>
             <div className="aside-part">
                 <div className='cart-area'>
@@ -47,27 +49,19 @@ const Main = () => {
                     <div>
                         {cart.map(area =>
                             <div className='added-details' key={area.id}>
-
                                 <img src={area.img} alt="" />
-
                                 <p>{area.name}</p>
                                 <button className='delete-btn'><p><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></p></button>
                             </div>
                         )}
-
                     </div>
-                    <h4>chosen place</h4>
+                    <h3>Chosen place </h3>
                     <div className='added-details' key={randomPlace.id}>
-
-
                         <img src={randomPlace.img} alt="" />
-
                         <p>{randomPlace.name}</p>
-
                     </div>
                     <button onClick={randomBtn} className='first-choose'>choose 1 randomly</button>
                     <button onClick={resetBtn} className='reset'>reset item </button>
-
                 </div>
             </div>
         </div>

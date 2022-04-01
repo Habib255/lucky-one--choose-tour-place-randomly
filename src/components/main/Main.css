@@ -64,7 +64,7 @@
 
 .added-details img {
     width: 40%;
-    border-radius: 50%;
+    border-radius: 30%;
     padding: 10px;
 
 }
@@ -78,4 +78,8 @@
 
 .delete-btn {
     border: none;
+}
+
+.question-answer {
+    background-color: beige;
 }
