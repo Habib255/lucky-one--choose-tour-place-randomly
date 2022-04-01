@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1234aaa",
+    "name": "Ahsan monjil",
+    "costToVisit": 400,
+    "location": "Dhaka",
+    "ratings": 4,
+    "img": "./images/ahsan-monjil.jpg"
+  },
+  {
+    "id": "1234vvv",
+    "name": "Bisnakandi",
+    "costToVisit": 3000,
+    "location": "Sylet",
+    "ratings": 4,
+    "img": "./images/bisnakandi.jpg"
+  },
+  {
+    "id": "1234xxx",
+    "name": "Ramna park",
+    "costToVisit": 300,
+    "location": "Dhaka",
+    "ratings": 4,
+    "img": "./images/ramna-park.jpg"
+  },
+  {
+    "id": "1234ttt",
+    "name": "Sea beach",
+    "costToVisit": 3000,
+    "location": "Cox's Bazar",
+    "ratings": 4,
+    "img": "./images/cox-s-bazar.jpg"
+  },
+  {
+    "id": "1234yyy",
+    "name": "Sonarga",
+    "costToVisit": 700,
+    "location": "Dhaka",
+    "ratings": 4,
+    "img": "./images/sonarga.jpg"
+  },
+  {
+    "id": "1234uuu",
+    "name": "Boga Lake",
+    "costToVisit": 2000,
+    "location": "Chittagong",
+    "ratings": 4,
+    "img": "./images/boga-lake.jpg"
+  },
+  {
+    "id": "1234iii",
+    "name": "Lalbag",
+    "costToVisit": 500,
+    "location": "Dhaka",
+    "ratings": 4,
+    "img": "./images/lalbag.jpg"
+  },
+  {
+    "id": "1234ooo",
+    "name": "Hatirjheel",
+    "costToVisit": 500,
+    "location": "Dhaka",
+    "ratings": 4,
+    "img": "./images/hatirjheel.jpg"
+  },
+  {
+    "id": "1234ppp",
+    "name": "Safari park",
+    "costToVisit": 420,
+    "location": "Gazipur",
+    "ratings": 4,
+    "img": "./images/safari-park.jpg"
+  }
+]
