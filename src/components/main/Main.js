@@ -19,10 +19,17 @@ const Main = () => {
         const newCart = [...cart, place]
         setCart(newCart)
     }
+    const resetBtn = () => {
+
+        setCart([])
+        setRandomPlace([])
+    }
     const randomBtn = () => {
         const randomPlace = cart[Math.floor(Math.random() * cart.length)]
 
         setRandomPlace(randomPlace)
+
+
     }
     return (
         <div className='fullpart'>
@@ -36,7 +43,7 @@ const Main = () => {
             </div>
             <div className="aside-part">
                 <div className='cart-area'>
-                    <h2>selected item: {cart.length}</h2>
+                    <h2>Selected place</h2>
                     <div>
                         {cart.map(area =>
                             <div className='added-details' key={area.id}>
@@ -49,9 +56,17 @@ const Main = () => {
                         )}
 
                     </div>
-                    <div><h4>randomly chosen city is -- {randomPlace.name}</h4></div>
+                    <h4>chosen place</h4>
+                    <div className='added-details' key={randomPlace.id}>
+
+
+                        <img src={randomPlace.img} alt="" />
+
+                        <p>{randomPlace.name}</p>
+
+                    </div>
                     <button onClick={randomBtn} className='first-choose'>choose 1 randomly</button>
-                    <button className='reset'>reset item </button>
+                    <button onClick={resetBtn} className='reset'>reset item </button>
 
                 </div>
             </div>
