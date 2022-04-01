@@ -36,11 +36,14 @@ const Main = () => {
                         handleAddToCart={handleAddToCart}></Places>)
                 }
                 <div className='question-answer'>
-                    <p>Question: How does react work</p>
-                    <p>Answer: </p>
-                    <p>Question: Difference between props and state
+                    <p><strong>Question: </strong> How does react work</p>
+                    <p><strong>Answer: </strong> React is a javascript library.it works dividing it's
+                        Ui into multiple components which can be coded easily , can
+                        debug easily
+                        and where each components has its own property and function. </p>
+                    <p><strong>Question: </strong> Difference between props and state
                     </p>
-                    <p>Answer: </p>
+                    <p><strong>Answer: </strong></p>
                 </div>
             </div>
             <div className="aside-part">
